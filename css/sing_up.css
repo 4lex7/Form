@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/*Global */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+a{
+    color: #000;
+    transition: 0.5s  ease-in-out all;;
+}
+a:hover{
+color: #0772ec;
+}
+body{
+    background-color: #545353;
+}
+span{
+    color: red;
+    margin-left: 10px;
+}
+
+/* container */
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* form */
+.form{
+    border: 1px solid #b7b6b6;
+    width: 350px;
+    height: 66%;
+    padding: 25px 45px;
+    box-shadow: 10px 5px 5px #3c3c3c;
+    border-radius: 10px;
+    background-color: #fff;
+}
+/* title */
+.container-title{
+    border-bottom: 1px solid #000;
+}
+.title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 15px;
+    padding: 2;
+    
+}
+
+/* Login */
+.container-login{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.container-login p{
+    margin-right: 4px;
+}
+/* email */
+.container-email{
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.container-email .label-email{
+    margin-bottom: 10px;
+}
+.container-email .input-email{
+    height: 30px;
+    width: 95%;
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.container-email input:focus {
+    outline: none;
+    scale: 1.1;
+}
+  .container-email input:hover {
+    scale: 1.1;
+}
+/* Username */
+.container-username{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.container-username .label-username{
+    margin-bottom: 10px;
+}
+.container-username .input-username{
+    height: 30px;
+    width: 95%;
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.container-username input:focus {
+    outline: none;
+    scale: 1.1;
+}
+  .container-username input:hover {
+    scale: 1.1;
+}
+/* password */
+.container-password{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.container-password .label-password{
+    margin-bottom: 10px;
+}
+.container-password .input-password{
+    height: 30px;
+    width: 95%;
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.container-password input:focus {
+    outline: none;
+    scale: 1.1;
+}
+.container-password input:hover {
+    scale: 1.1;
+}
+/*password_confirm */
+.container-password_confirm{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.container-password_confirm .label-password_confirm{
+    margin-bottom: 10px;
+}
+.container-password_confirm .input-password_confirm{
+    height: 30px;
+    width: 95%;
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.container-password_confirm input:focus {
+    outline: none;
+    scale: 1.1;
+}
+  .container-password_confirm input:hover {
+    scale: 1.1;
+}
+/* check */
+.container-check{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1px;
+    font-size: 17px;
+}
+.container-check .parrafo{
+margin-left: 17px;
+ margin-right: 5px;
+}
+.container-check .check{
+    margin-left: 10px;
+    width: 15px;
+}
+.container-span-check{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+/* button */
+    .container-button{
+        display: flex;
+        justify-content: center;
+    }
+    .container-button .button{
+        
+        height: 43px;
+        width: 40%;
+        font-size: 17px;
+        color: #e2e2e2;
+        background-color: #000;
+        cursor: pointer; 
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        font-weight: bold;
+        border: 0.4px solid #000;
+    
+        
+    }
+    .container-button .button::after{
+        content: "";
+        width: 0%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: calc(-100%);
+        border-bottom:90px solid white;
+        border-right: 70px solid transparent ;
+        transition: .5s ;
+    
+    }
+    .container-button .button:hover::after{
+        left: 0;
+
+    }
+    .container-button .button:focus:after{
+        left: calc(100%);
+        background-color: transparent;
+        transition: 2s ;
+        border-bottom:80px solid white;
+        border-right: 80px solid transparent;
+        width: 100%;
+    
+    }
+    .container-button .button:focus{
+        background-color: red;
+        transition: .5s;
+    }
+    .container-button .button:active{
+        scale: 0.90;
+        transition: .5;
+        ;
+    }
+/* responsive */
+@media screen and (max-height:1000px) {
+    *{scale: 0.97;}
+   .form{
+      height: 600px;
+    }
+}
+@media screen and (max-width:280px) {
+    *{scale: 0.90;}
+   .form{
+      height: 100%;
+      width: 100%;
+    }
+}
+
+
+
+
