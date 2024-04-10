@@ -20,9 +20,8 @@ span{
     margin-left: 10px;
 }
 
-#video{
+#image{
     position: absolute;
-
     z-index: -1;
     object-fit: cover;
     min-height:100%;
@@ -47,18 +46,12 @@ span{
    
     width: 350px;
     height: 60%;
-    /* From https://css.glass */
-/* From https://css.glass */
-/* From https://css.glass */
-/* From https://css.glass */
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.86);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0px);
--webkit-backdrop-filter: blur(0px);
-border: 1px solid rgba(255, 255, 255, 0.1);
-
+    background: rgba(255, 255, 255, 0.86);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 30px 45px;
     border-radius: 10px;
 
